@@ -1,0 +1,12 @@
+name: Push Success Message
+
+on: [push]
+
+jobs:
+  say-success:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say success
+        run: echo "✅ Code pushed successfully to GitHub!"
+
+
